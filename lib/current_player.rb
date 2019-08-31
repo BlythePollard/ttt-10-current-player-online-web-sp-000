@@ -12,9 +12,7 @@ end
 #returns x or o based on how many turns played
 def current_player(board)
   turn_count(board)
-    if turn_count(board).even?
-       "X"
-    else 
-       "O"
+    turn_count(board).even? ? "X" : "odd" 
+      
   end
 end
